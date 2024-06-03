@@ -131,7 +131,7 @@ footer {
 .flexbox-container {
   display: flex;
   width: 80%;
-  margin: 30px auto 20px auto;
+  margin: 20px auto 0px auto;
   justify-content: space-between;
 }
 
@@ -146,7 +146,7 @@ footer {
 }
 
 .element img {
-  width: 60px;
+  width: 40px;
   margin: auto 0px;
 }
 
@@ -158,11 +158,20 @@ footer {
 
 .details {
   display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.details1 {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   column-gap: 50px;
   width: 100%;
 }
+
 
 .box p {
   font-size: 1.5em;
@@ -170,7 +179,7 @@ footer {
 }
 
 .box img {
-  width: 75%;
+    width: 75%;
 }
 
 .details .images {

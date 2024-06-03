@@ -101,105 +101,59 @@
 	      The website of leaderboards is online now, while the content is still being filled. We acknowledge the awesome website template from <a href="https://github.com/RobustBench/robustbench.github.io">RobustBench</a>.
              </li>
           </ul>
-
-
-
+	  
         </p>
         <div class="flexbox-container features">
           <div class="element">
             <div class="icon">
-              <img src="https://img.icons8.com/wired/100/000000/leaderboard.png" />
+              <img src="./images/analysis.png" />
             </div>
             <p>
-              Up-to-date leaderboard based <br />
-              on 120+ models
+              Out-Of-Distribution Generalization Analysis for Adversarial Robustness
             </p>
           </div>
-          <div class="element">
-            <div class="icon">
-              <img src="https://img.icons8.com/ios-glyphs/80/000000/user-credentials.png" />
-            </div>
-            <p>
-              Unified access to 80+ state-of-the-art <br />robust models via
-              Model Zoo
-            </p>
-          </div>
+          <!-- <div class="element"> -->
+          <!--   <div class="icon"> -->
+          <!--     <img src="./images/linear.png" /> -->
+          <!--   </div> -->
+          <!--   <p> -->
+          <!--     Strong linear correlation <br /> -->
+	  <!--     between ID and OOD robustness -->
+          <!--   </p> -->
+          <!-- </div> -->
         </div>
       </div>
       <div class="details">
-        <div class="box usage">
-          <p>Model Zoo</p>
-          <div class="divider">
-            <hr />
-          </div>
-          Check out the
-          <a href="https://github.com/RobustBench/robustbench#model-zoo">available models</a>
-          and our
-          <a href="https://github.com/RobustBench/robustbench#notebooks">Colab tutorials</a>.
-          <div class="codeblock">
-            <div class="vspace10"></div>
-            <!--
-# !pip install git+https://github.com/RobustBench/robustbench.git@v0.2.1
-from robustbench.utils import load_model
-# Load a model from the model zoo
-model = load_model(model_name='Rebuffi2021Fixing_70_16_cutmix_extra',
-                   dataset='cifar10',
-                   threat_model='Linf')
-
-# Evaluate the Linf robustness of the model using AutoAttack
-from robustbench.eval import benchmark
-clean_acc, robust_acc = benchmark(model,
-                                  dataset='cifar10',
-                                  threat_model='Linf')
-
-            -->
-            <!-- HTML generated using hilite.me -->
-            <div style="background: #ffffff; overflow:auto;width:auto;padding:.2em .6em;">
-              <pre style="margin: 0; line-height: 125%"><span style="color: #888888"># !pip install git+https://github.com/RobustBench/robustbench@v0.2.1</span>
-<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">robustbench.utils</span> <span style="color: #008800; font-weight: bold">import</span> load_model
-<span style="color: #888888"># Load a model from the model zoo</span>
-model <span style="color: #333333">=</span> load_model(model_name<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;Rebuffi2021Fixing_70_16_cutmix_extra&#39;</span>,
-                   dataset<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;cifar10&#39;</span>,
-                   threat_model<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;Linf&#39;</span>)
-
-<span style="color: #888888"># Evaluate the Linf robustness of the model using AutoAttack</span>
-<span style="color: #008800; font-weight: bold">from</span> <span style="color: #0e84b5; font-weight: bold">robustbench.eval</span> <span style="color: #008800; font-weight: bold">import</span> benchmark
-clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
-                                  dataset<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;cifar10&#39;</span>,
-                                  threat_model<span style="color: #333333">=</span><span style="background-color: #fff0f0">&#39;Linf&#39;</span>)
-</pre>
-            </div>
-
-
-            <!-- HTML generated using hilite.me -->
-            <div style="
-                background: #ffffff;
-                overflow: auto;
-                width: auto;
-                border: solid gray;
-                border-width: 0em 0em 0em 0em;
-                padding: 0.2em 0.6em;
-              ">
-
-              </pre>
-            </div>
-          </div>
-        </div>
         <div class="box images">
-          <p>Analysis</p>
           <div class="divider">
             <hr />
           </div>
-          Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis.
+	  Degradation of accuracy and robustness in face of different distribution shifts:
           <div>
-            <!--          <div class="scroller analysis-images">-->
-            <img class="analysis" src="./images/aa_robustness_vs_venues_Linf.png" alt="robustness_vs_venues" />
-            <!--            <img-->
-            <!--              src="./images/aa_robustness_vs_standard_Linf.png"-->
-            <!--              alt="robustness_vs_clean"-->
-            <!--            />-->
+	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" />
           </div>
+	  Strong linear correlation between ID and OOD for various distribution shifts:
+	  <div>
+	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" />
+          </div>
+	  Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis.
+          
+	  
         </div>
+        <!-- <div class="box images"> -->
+        <!--   <div class="divider"> -->
+        <!--     <hr /> -->
+        <!--   </div> -->
+        <!--   Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis. -->
+        <!--   <div> -->
+        <!--     <\!--          <div class="scroller analysis-images">-\-> -->
+        <!--       <img class="analysis" src="./images/OOD.jpg" alt="robustness_vs_venues" /> -->
+        <!--     <\!--            <img-\-> -->
+        <!--     <\!--              src="./images/aa_robustness_vs_standard_Linf.png"-\-> -->
+        <!--     <\!--              alt="robustness_vs_clean"-\-> -->
+        <!--     <\!--            />-\-> -->
+        <!--   </div> -->
+        <!-- </div> -->
       </div>
       <div class="vspace10"></div>
     </section>
@@ -208,14 +162,11 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
     <div id="leaderboard" class="container button-list">
       <div class="heading">
         <u>
-          Available Leaderboards
+          Leaderboards
         </u>
       </div>
       <a class="btn btn-secondary" href="#div_cifar10_Linf_heading">CIFAR-10 (\( \ell_\infty\))</a>
       <a class="btn btn-secondary" href="#div_cifar10_L2_heading">CIFAR-10 (\( \ell_2\))</a>
-      <a class="btn btn-secondary" href="#div_cifar10_corruptions_heading">CIFAR-10 (Corruptions)</a>
-      <a class="btn btn-secondary" href="#div_cifar100_Linf_heading">CIFAR-100 (\( \ell_\infty\))</a>
-      <a class="btn btn-secondary" href="#div_cifar100_corruptions_heading">CIFAR-100 (Corruptions)</a>
       <a class="btn btn-secondary" href="#div_imagenet_Linf_heading">ImageNet (\( \ell_\infty\))</a>
       <a class="btn btn-secondary" href="#div_imagenet_corruptions_heading">ImageNet (Corruptions: IN-C, IN-3DCC)</a>
     </div>
@@ -319,92 +270,31 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
       </div>
 
       <p class="qa-box">
-        <span class="question">&#10148; How does the RobustBench leaderboard differ from the
-          <a href="https://github.com/fra31/auto-attack">AutoAttack leaderboard</a>? 🤔
+        <span class="question">&#10148; How does the OODRobustBench differ from the
+          <a href="https://robustbench.github.io/">RobustBench</a>? 🤔
         </span>
         <br />
-        <span class="answer"> The <a href="https://github.com/fra31/auto-attack">AutoAttack leaderboard</a> was
-          the starting point of RobustBench. Now only the RobustBench leaderboard is actively maintained.
+        <span class="answer"> Our benchmark focuses on OOD adversarial robustness while RobustBench focuses on ID adversarial robustness. Specifically, our benchmark contrasts RobustBench in the datasets and the attacks. We use CIFAR-10.1, CIFAR-10.2, CINIC, and CIFAR-10-R (ImageNet-V2, ImagetNet-A, ImageNet-R, ObjectNet) to simulate input data distribution shift for the source datasets CIFAR-10 (ImageNet), while RobustBench only uses the latter source datasets. We use PPGD, LPA, ReColor, StAdv, Linf-12/255, L2-0.5 (PPGD, LPA, ReColor, StAdv, Linf-8/255, L2-1) to simulate threat shift for the training threats Linf-8/255 (L2-0.5), while RobustBench only evaluates the same threats as the training ones.
         </span>
       </p>
 
       <p class="qa-box">
-        <span class="question">&#10148; How does the RobustBench leaderboard differ from
-          <a href="https://www.robust-ml.org/">robust-ml.org</a>? 🤔
+        <span class="question">&#10148;Is the linear trend of robustness really expected given the linear trend of accuracy a.k.a. <a href="https://proceedings.mlr.press/v139/miller21b.html">accuracy-on-the-line</a>? 🤔
         </span>
         <br />
-        <span class="answer"><a href="https://www.robust-ml.org/">robust-ml.org</a> focuses on
-          <em>adaptive</em> evaluations, but we provide a
-          <strong>standardized benchmark</strong>. Adaptive evaluations have been very useful (e.g., see
-          <a href="https://arxiv.org/abs/2002.08347">Tramer et al., 2020</a>),
-          but they are also very time-consuming and cannot be standardized by definition. Instead, we argue
-          that one can estimate robustness accurately mostly <em>without</em> adaptive
-          attacks but for this one has to introduce some restrictions on the
-          considered models (see <a href="https://arxiv.org/abs/2010.09670">our paper</a> for more details).
-          However, we do welcome adaptive evaluations and we are always interested in showing the best known
-          robust accuracy.
+        <span class="answer"> No. There is a well-known trade-off between accuracy and robustness in the ID setting. We further confirm this fact for the models we evaluate in Figure 13 in <a href="https://arxiv.org/abs/2310.12793">our paper</a>. This means that accuracy and robustness usually go in opposite directions making the linear trend we discover in both particularly interesting. Furthermore, the threat shifts as a scenario of OOD are unique to adversarial evaluation and were thus never explored in the previous studies of accuracy trends.
         </span>
       </p>
 
       <p class="qa-box">
-        <span class="question">&#10148; How is it related to libraries like
-          <a href="https://github.com/bethgelab/foolbox">foolbox</a> /
-          <a href="https://github.com/tensorflow/cleverhans">cleverhans</a> /
-          <a href="https://github.com/BorealisAI/advertorch">advertorch</a>? 🤔
+        <span class="question">&#10148; How does our analysis on ID-OOD trends differ from the similar one in <a href="https://robustbench.github.io/">RobustBench</a>? 🤔
         </span>
         <br />
-        <span class="answer">These libraries provide implementations of different
-          <em>attacks</em>. Besides the standardized benchmark,
-          <strong>RobustBench</strong> additionally provides a repository of the
-          most robust models. So you can start using the robust models in one
-          line of code (see the tutorial
-          <a href="https://github.com/RobustBench/robustbench#model-zoo-quick-tour">here</a>).</span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; Why is Lp-robustness still interesting? 🤔
-        </span>
-        <br />
-        <span class="answer">There are numerous interesting applications of Lp-robustness that
-          span transfer learning (<a href="https://arxiv.org/abs/2007.08489">Salman et al. (2020)</a>,
-          <a href="https://arxiv.org/abs/2007.05869">Utrera et al. (2020)</a>),
-          interpretability (<a href="https://arxiv.org/abs/1805.12152">Tsipras et al. (2018)</a>, <a
-            href="https://arxiv.org/abs/1910.08640">Kaur et al. (2019)</a>,
-          <a href="https://arxiv.org/abs/1906.00945">Engstrom et al. (2019)</a>), security (<a
-            href="https://arxiv.org/abs/1811.03194">Tramèr et al. (2018)</a>,
-          <a href="https://arxiv.org/abs/1906.07153">Saadatpanah et al. (2019)</a>), generalization (<a
-            href="https://arxiv.org/abs/1911.09665">Xie et al. (2019)</a>, <a
-            href="https://arxiv.org/abs/1909.11764">Zhu et al. (2019)</a>,
-          <a href="https://arxiv.org/abs/2004.10934">Bochkovskiy et al. (2020)</a>), robustness to unseen perturbations
-          (<a href="https://arxiv.org/abs/1911.09665">Xie et al. (2019)</a>, <a
-            href="https://arxiv.org/abs/1905.01034">Kang et al. (2019)</a>),
-          stabilization of GAN training (<a href="https://arxiv.org/abs/2008.03364">Zhong et al. (2020)</a>).</span>
-      </p>
-
-      <p class="qa-box">
-        <span class="question">&#10148; What about verified adversarial robustness? 🤔
-        </span>
-        <br />
-        <span class="answer">We mostly focus on defenses which improve
-          <em>empirical</em> robustness, given the lack of clarity regarding
-          which approaches really improve robustness and which only make some
-          particular attacks unsuccessful.
-          However, we do not restrict submissions of verifiably robust models (e.g., we have
-          <a href="https://arxiv.org/abs/1906.06316">Zhang et al. (2019)</a> in our CIFAR-10 Linf leaderboard).
-          For methods targeting verified robustness, we encourage the readers to check out
-          <a href="https://arxiv.org/abs/1902.08722">Salman et al. (2019)</a>
-          and <a href="https://arxiv.org/abs/2009.04131">Li et al. (2020)</a>.
+        <span class="answer"> The scale of analysis on ID-OOD trends in RobustBench is rather small. RobustBench observes linear correlation only for three shifts on CIFAR-10 based on 39 models with either ResNet or WideResNet architectures. In such a narrow setting, it is actually neither surprising to see a linear trend nor reliable for predicting OOD performance. By contrast, our conclusion is derived from much more shifts on CIFAR-10 and ImageNet based on 706 models. Importantly, our model zoo covers a diverse set of architectures, robust training methods, data augmentation techniques, and training set-ups. This makes our conclusion more generalizable and the observed (almost perfect) linear trend much more significant.
         </span>
       </p>
 
-      <p class="qa-box">
-        <span class="question">&#10148; What if I have a better attack than the one used in this
-          benchmark? 🤔
-        </span>
-        <br />
-        <span class="answer">We will be happy to add a better attack or any adaptive evaluation
-          that would complement our default standardized attacks!</span>
-      </p>
+
     </section>
 
 
@@ -415,8 +305,7 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
       <div class="heading">
         <p>Citation</p>
       </div>
-      Consider citing our whitepaper if you want to reference our leaderboard or if you are using the models from the
-      Model Zoo:
+      Consider citing our paper if you want to reference our leaderboard or evaluate your model by this benchmark:
       <!--      @article{croce2020robustbench,-->
       <!--        title={RobustBench: a standardized adversarial robustness benchmark},-->
       <!--        author={Croce, Francesco and Andriushchenko, Maksym and Sehwag, Vikash and Flammarion, Nicolas and Chiang, Mung and Mittal, Prateek and Matthias Hein},-->
@@ -426,12 +315,11 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
       <!-- HTML generated using hilite.me -->
       <div
         style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.0em .0em .0em .0em;padding:.2em .6em;">
-        <pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@article</span>{croce2020robustbench,
-    title<span style="color: #333333">=</span>{RobustBench: a standardized adversarial robustness benchmark},
-    author<span style="color: #333333">=</span>{Croce, Francesco <span style="color: #000000; font-weight: bold">and</span> Andriushchenko, Maksym <span style="color: #000000; font-weight: bold">and</span> Sehwag, Vikash <span style="color: #000000; font-weight: bold">and</span> Debenedetti, Edoardo <span style="color: #000000; font-weight: bold">and</span> Flammarion, Nicolas
-    <span style="color: #000000; font-weight: bold">and</span> Chiang, Mung <span style="color: #000000; font-weight: bold">and</span> Mittal, Prateek <span style="color: #000000; font-weight: bold">and</span> Matthias Hein},
-    journal<span style="color: #333333">=</span>{arXiv preprint arXiv:2010.09670},
-    year<span style="color: #333333">=</span>{2020}
+        <pre style="margin: 0; line-height: 125%"><span style="color: #555555; font-weight: bold">@inproceedings</span>{li2024oodrobustbench,
+    title<span style="color: #333333">=</span>{OODRobustBench: a Benchmark and Large-Scale Analysis of Adversarial Robustness under Distribution Shift},
+    author<span style="color: #333333">=</span>{Lin Li, Yifei Wang, Chawin Sitawarin, Michael Spratling},
+    booktitle<span style="color: #333333">=</span>{International Conference on Machine Learning},
+    year<span style="color: #333333">=</span>{2024}
 }</pre>
       </div>
 
@@ -440,20 +328,20 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
     <div class="vspace50"></div>
 
     <section id="contribute">
-      <div class="details">
+      <div class="details1">
         <div class="box2">
-          <p>Contribute to RobustBench!</p>
+          <p>Contribute to OODRobustBench!</p>
           <div class="divider">
             <hr />
           </div>
           We welcome any contribution in terms of both new robust models and
           evaluations. Please check
-          <a href="https://github.com/RobustBench/robustbench#how-to-contribute">here</a>
+          <a href="https://github.com/OODRobustBench/OODRobustBench">here</a>
           for more details.
           <br />
           <br />
           Feel free to contact us at
-          <a href="mailto:adversarial.benchmark@gmail.com">adversarial.benchmark@gmail.com</a>
+          <a href="mailto:lin.3.li@kcl.ac.uk">lin.3.li@kcl.ac.uk</a>
         </div>
         <div class="box2">
           <p>Maintainers</p>
@@ -462,29 +350,25 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
           </div>
           <ul>
             <li>
-              <a href="https://twitter.com/fra__31" target="_blank">Francesco Croce
+              <a href="https://treelli.github.io/" target="_blank">Lin Li
               </a>
-              <a href="https://twitter.com/fra__31"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/fra31"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=laq9cq0AAAAJ"><i class="ai ai-google-scholar"></i></a>
+              <a href="https://github.com/TreeLLi"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=dxP6Y_oAAAAJ"><i class="ai ai-google-scholar"></i></a>
             </li>
             <li>
-              <a href="https://people.epfl.ch/maksym.andriushchenko" target="_blank">Maksym Andriushchenko</a>
-              <a href="https://people.epfl.ch/maksym.andriushchenko"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/max-andr"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=ZNtuJYoAAAAJ"><i class="ai ai-google-scholar"></i></a>
+              <a href="https://yifeiwang77.com/" target="_blank">Yifei Wang</a>
+              <a href="https://github.com/yifeiwang77"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=-CLy6YsAAAAJ"><i class="ai ai-google-scholar"></i></a>
             </li>
             <li>
-              <a href="https://vsehwag.github.io/" target="_blank">Vikash Sehwag</a>
-              <a href="https://vsehwag.github.io/"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/VSehwag"><i class="fab fa-github"></i></a>
-              <a href="https://scholar.google.com/citations?user=JAkeEG8AAAAJ"><i class="ai ai-google-scholar"></i></a>
+              <a href="https://chawins.github.io/" target="_blank">Chawin Sitawarin</a>
+              <a href="https://github.com/chawins"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=AxUAEQ4AAAAJ"><i class="ai ai-google-scholar"></i></a>
             </li>
             <li>
-              <a href="https://edoardo.science" target="_blank">Edoardo Debenedetti</a>
-              <a href="https://edoardo.science"><i class="fas fa-globe"></i></a>
-              <a href="https://github.com/dedeswim"><i class="fab fa-github"></i></a>
-              <a href="https://twitter.com/edoardo_debe"><i class="fab fa-twitter"></i></a>
+              <a href="https://mwspratling.codeberg.page/" target="_blank">Michael Spratling</a>
+              <a href="https://codeberg.org/mwspratling"><i class="fab fa-github"></i></a>
+              <a href="https://scholar.google.com/citations?user=A2tJIE4AAAAJ"><i class="ai ai-google-scholar"></i></a>
             </li>
           </ul>
         </div>
@@ -495,8 +379,9 @@ clean_acc, robust_acc <span style="color: #333333">=</span> benchmark(model,
   <hr class="bottomrule" />
 
   <footer>
-    <small>&copy; 2021, RobustBench;
-      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>
+    <small>&copy; 2024, OODRobustBench;
+      Defense/Win/Analysis icons created by <a href="https://www.flaticon.com/free-icons/analysis" title="analysis icons">Prosymbols Premium</a>/<a href="https://www.flaticon.com/free-icons/win" title="win icons">Freepik</a>/<a href="https://www.flaticon.com/free-icons/defense" title="defense icons">Uniconlabs</a> - Flaticon</small>
+    
   </footer>
 
   <script>
