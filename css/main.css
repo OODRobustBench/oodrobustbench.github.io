@@ -358,13 +358,19 @@ table .method {
 table .extra-data {
   width: 6%;
 }
-table .ca {
+table .idca {
   width: 10%;
 }
-table .aa {
+table .idra {
   width: 12%;
 }
-table .aa_3d {
+table .ooddca {
+  width: 12%;
+}
+table .ooddra {
+  width: 12%;
+}
+table .oodtra {
   width: 12%;
 }
 
