@@ -94,7 +94,15 @@
       <div class="overview">
         <p class="doublealign">
 	  Existing works have made great progress in improving adversarial robustness, but typically test their method only on data from the same distribution as the training data, i.e. in-distribution (ID) testing. As a result, it is unclear how such robustness generalizes under input distribution shifts, i.e. out-of-distribution (OOD) testing. This is a concerning omission as such distribution shifts are unavoidable when methods are deployed in the wild. To address this issue we propose a benchmark named OODRobustBench to comprehensively assess OOD adversarial robustness using 23 dataset-wise shifts (i.e. naturalistic shifts in input distribution) and 6 threat-wise shifts (i.e., unforeseen adversarial threat models).
-          <br><br>
+          <br>
+      <div class="details">
+        <div class="box images">
+          <div>
+	    <img class="analysis" src="./images/benchmark_construction.png" alt="robustness_vs_venues" />
+          </div>
+        </div>
+      </div>
+      <br>
           <strong> News:</strong>
           <ul>
             <li>  <strong>May 2024:</strong>
@@ -103,59 +111,60 @@
           </ul>
 	  
         </p>
-        <div class="flexbox-container features">
-          <div class="element">
-            <div class="icon">
-              <img src="./images/analysis.png" />
-            </div>
-            <p>
-              Out-Of-Distribution Generalization Analysis for Adversarial Robustness
-            </p>
-          </div>
-          <!-- <div class="element"> -->
-          <!--   <div class="icon"> -->
-          <!--     <img src="./images/linear.png" /> -->
-          <!--   </div> -->
-          <!--   <p> -->
-          <!--     Strong linear correlation <br /> -->
-	  <!--     between ID and OOD robustness -->
-          <!--   </p> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="details">
-        <div class="box images">
+	      
+      <!--   <div class="flexbox-container features"> -->
+      <!--     <div class="element"> -->
+      <!--       <div class="icon"> -->
+      <!--         <img src="./images/analysis.png" /> -->
+      <!--       </div> -->
+      <!--       <p> -->
+      <!--         Out-Of-Distribution Generalization Analysis for Adversarial Robustness -->
+      <!--       </p> -->
+      <!--     </div> -->
+      <!--     <\!-- <div class="element"> -\-> -->
+      <!--     <\!--   <div class="icon"> -\-> -->
+      <!--     <\!--     <img src="./images/linear.png" /> -\-> -->
+      <!--     <\!--   </div> -\-> -->
+      <!--     <\!--   <p> -\-> -->
+      <!--     <\!--     Strong linear correlation <br /> -\-> -->
+      <!-- 	  <\!--     between ID and OOD robustness -\-> -->
+      <!--     <\!--   </p> -\-> -->
+      <!--     <\!-- </div> -\-> -->
+      <!--   </div> -->
+      <!-- </div> -->
+      <!-- <div class="details"> -->
+      <!--   <div class="box images"> -->
           <div class="divider">
             <hr />
           </div>
-	  Degradation of accuracy and robustness in face of different distribution shifts:
-          <div>
-	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" />
-          </div>
-	  Strong linear correlation between ID and OOD for various distribution shifts:
-	  <div>
-	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" />
-          </div>
-	  Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis.
+      <!-- 	  Degradation of accuracy and robustness in face of different distribution shifts: -->
+      <!--     <div> -->
+      <!-- 	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" /> -->
+      <!--     </div> -->
+      <!-- 	  Strong linear correlation between ID and OOD for various distribution shifts: -->
+      <!-- 	  <div> -->
+      <!-- 	    <img class="analysis" src="./images/cifar10_Linf.jpg" alt="robustness_vs_venues" /> -->
+      <!--     </div> -->
+      <!-- 	  Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis. -->
           
 	  
-        </div>
-        <!-- <div class="box images"> -->
-        <!--   <div class="divider"> -->
-        <!--     <hr /> -->
-        <!--   </div> -->
-        <!--   Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis. -->
-        <!--   <div> -->
-        <!--     <\!--          <div class="scroller analysis-images">-\-> -->
-        <!--       <img class="analysis" src="./images/OOD.jpg" alt="robustness_vs_venues" /> -->
-        <!--     <\!--            <img-\-> -->
-        <!--     <\!--              src="./images/aa_robustness_vs_standard_Linf.png"-\-> -->
-        <!--     <\!--              alt="robustness_vs_clean"-\-> -->
-        <!--     <\!--            />-\-> -->
-        <!--   </div> -->
-        <!-- </div> -->
-      </div>
-      <div class="vspace10"></div>
+      <!--   </div> -->
+      <!--   <\!-- <div class="box images"> -\-> -->
+      <!--   <\!--   <div class="divider"> -\-> -->
+      <!--   <\!--     <hr /> -\-> -->
+      <!--   <\!--   </div> -\-> -->
+      <!--   <\!--   Check out <a href="https://arxiv.org/abs/2010.09670">our paper</a> with a detailed analysis. -\-> -->
+      <!--   <\!--   <div> -\-> -->
+      <!--   <\!--     <\\!--          <div class="scroller analysis-images">-\\-> -\-> -->
+      <!--   <\!--       <img class="analysis" src="./images/OOD.jpg" alt="robustness_vs_venues" /> -\-> -->
+      <!--   <\!--     <\\!--            <img-\\-> -\-> -->
+      <!--   <\!--     <\\!--              src="./images/aa_robustness_vs_standard_Linf.png"-\\-> -\-> -->
+      <!--   <\!--     <\\!--              alt="robustness_vs_clean"-\\-> -\-> -->
+      <!--   <\!--     <\\!--            />-\\-> -\-> -->
+      <!--   <\!--   </div> -\-> -->
+      <!--   <\!-- </div> -\-> -->
+      <!-- </div> -->
+      <!-- <div class="vspace10"></div> -->
     </section>
 
 
